@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 @keyframes pulse {
@@ -22,7 +22,7 @@ body{
 
 img {
     mix-blend-mode: multiply;
-    width: 50vh;
+    height: 50dvh;
     box-shadow: rgba(67, 15, 158, 0.8) 0 0 90px 33px;
     animation: pulse 5s infinite;
 }
