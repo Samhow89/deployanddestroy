@@ -65,6 +65,8 @@ h1 {
     margin-bottom: 20px;
 }
 
+
+
 p1 {
     font-family:  ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
     color: rgb(185, 183, 183);
@@ -86,6 +88,13 @@ p1 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10dvh;
+    flex-wrap: wrap;
+
+    font-family:  ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 #info {
@@ -93,4 +102,9 @@ p1 {
     width: 30%;
     height: 500px;
     border-radius: 20px;
+}
+
+html{
+    overflow-x: hidden;
+    background-color: #141f31;
 }
