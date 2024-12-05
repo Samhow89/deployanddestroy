@@ -1,11 +1,22 @@
-body{
-    background-color: #004E75;
+#test{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
-    overflow: hidden;
+    height: 100%; /* Make #test fill the height of its parent (main) */
+    width: 100%; /* Make #test fill the width of its parent (main) */
+    flex-wrap: wrap;
+    
+    
 }
+    
+
+
+body{
+    background-color: #004E75;
+    height: 200dvh;
+    align-items: center;
+}
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -22,9 +33,31 @@ body{
 
 img {
     mix-blend-mode: multiply;
-    height: 50dvh;
+    height: 35dvh;
     box-shadow: rgba(67, 15, 158, 0.8) 0 0 90px 33px;
     animation: pulse 5s infinite;
+    transition: transform 0.2s ease-out;
+    margin: 3vw;
+    transition: 0.5s;
+    
+}
+
+img:hover{
+    box-shadow: rgba(255, 255, 255, 0.397) 0 0 90px 33px;
+    
 }
 
 
+
+
+main {
+   
+    height: 89vh;
+    width: 90vw;
+    position: fixed;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
