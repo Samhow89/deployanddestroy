@@ -107,6 +107,7 @@ body {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .package-info {
@@ -156,6 +157,7 @@ body {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .gallery-image {
@@ -165,6 +167,7 @@ body {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    
 }
 
 /* FAQ Section */
