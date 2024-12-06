@@ -46,24 +46,6 @@ body {
     color: #50b7f5;
 }
 
-/* Header Section */
-.header {
-    text-align: center;
-    padding: 100px 0;
-    position: relative;
-}
-
-.logo {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    display: inline-block;
-    background-color: #141f31;
-    padding: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
 /* About Us Section */
 .about-us {
     display: flex;
@@ -74,7 +56,9 @@ body {
     gap: 30px;
     text-align: center;
     background-color: #1c2b43;
+    margin-top: 20px;
 }
+
 
 .about-us-image {
     width: 100%;
@@ -337,3 +321,7 @@ body {
         font-size: 1rem;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+  }
