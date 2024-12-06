@@ -42,6 +42,14 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  
+}
+
+img#Logo {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     animation: pulse 5s infinite;
 }
 
@@ -179,6 +187,9 @@ html{
     p1 {
         font-size: 1rem;
     }
+    #contact-info {
+        font-size: 1rem;
+    }
 }
 
 #ipic {
@@ -289,3 +300,52 @@ p#aboutp {
         font-size: 0.9rem;
     }
 }
+ 
+
+
+
+#contact {
+    background-color: #1e2f3f;
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+
+#contact h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#contact-info {
+    font-size: 1.2rem;
+    color: #b0b8bf;
+    line-height: 2;
+}
+
+#contact-info a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
