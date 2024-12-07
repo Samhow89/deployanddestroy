@@ -14,37 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar Styles */
-.navbar {
-    background-color: #141f31;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    padding: 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.nav-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #50b7f5;
-}
 
 /* About Us Section */
 .about-us {
@@ -267,13 +236,10 @@ body {
     animation: fadeInUp 1s ease-in-out;
 }
 
-.navbar, .header, .about-us, .our-igloos, .gallery, .faq, .testimonials, .contact-us {
+.header, .about-us, .our-igloos, .gallery, .faq, .testimonials, .contact-us {
     animation: fadeInUp 1.2s ease-in-out forwards;
 }
 
-.navbar, .header {
-    animation-delay: 0.1s;
-}
 
 .about-us, .our-igloos {
     animation-delay: 0.2s;
@@ -289,15 +255,6 @@ body {
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-    .navbar {
-        position: relative;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
 
     .about-us {
         flex-direction: column;
@@ -337,4 +294,76 @@ html {
 body {
     height: 100%;
     overflow: auto;
+}
+
+
+/* Enquiry Form Section */
+.enquiry-form {
+    background-color: #1c2b43;
+    color: white;
+    padding: 50px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.enquiry-form h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.enquiry-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #141f31;
+    color: white;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #50b7f5;
+    box-shadow: 0 0 5px rgba(80, 183, 245, 0.8);
+}
+
+.submit-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #50b7f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #3a96c8;
 }

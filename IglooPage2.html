@@ -9,22 +9,6 @@
 </head>
 <body>
     
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#about-us" class="nav-link">About Us</a></li>
-            <li><a href="#our-igloos" class="nav-link">Our Igloos</a></li>
-            <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#faq" class="nav-link">FAQ</a></li>
-            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-            <li><a href="#contact-us" class="nav-link">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header Section -->
-    <!-- <header class="header">
-        <img src="igloologo.png" alt="Lancashire Igloo Hire Logo" class="logo">
-    </header> -->
 
     <!-- About Us Section -->
     <section id="about-us" class="about-us">
@@ -111,6 +95,52 @@
             <p>Yes, the igloo is waterproof and wind-resistant but not suitable for adverse weather conditions. In winds over 30mph, it cannot be safely set up. Condensation may occur, but the two windows can be opened to circulate air inside.</p>
         </div>
     </section>
+
+    <section id="enquiry-form" class="enquiry-form">
+        <h2>Enquire About Hiring an Igloo</h2>
+        <p class="enquiry-description">
+            We would love to be part of your celebrations and help you create long-lasting memories! Fill out the form below to enquire about hiring an igloo, and a member of our team will be in touch. 
+            We can customise our packages to suit any occasion. Please note that prices vary depending on location, package, and hire duration. 
+            We aim to respond within 24 hours. To secure a booking, a £100 refundable deposit is required. Bookings cannot be secured without this deposit.
+        </p>
+        <form action="/submit-enquiry" method="POST" class="form-container">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+    
+            <label for="date">Date of Hire:</label>
+            <input type="date" id="date" name="date" required>
+    
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" name="days" min="1" max="7" required>
+    
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" placeholder="Your Postcode" required>
+    
+            <label for="package">Igloo Package:</label>
+            <select id="package" name="package" required>
+                <option value="" disabled selected>Select a Package</option>
+                <option value="cinema">Cinema Package</option>
+                <option value="party">Party Package</option>
+                <option value="igloo-only">Igloo Only</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="occasion">Occasion:</label>
+            <input type="text" id="occasion" name="occasion" placeholder="Birthday, Wedding, etc.">
+    
+            <label for="comments">Other Comments/Special Requests:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Let us know any specific details or requests"></textarea>
+    
+            <button type="submit" class="submit-button">Submit Enquiry</button>
+        </form>
+    </section>
+    
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
