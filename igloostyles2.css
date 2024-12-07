@@ -254,31 +254,113 @@ body {
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 768px) {
-
+@media (max-width: 768px) {
+    /* About Us Section */
     .about-us {
         flex-direction: column;
+        padding: 30px;
     }
 
+    .about-us-image {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .about-us-content {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    /* Our Igloos Section */
     .packages {
         flex-direction: column;
+        gap: 20px;
     }
 
     .package-info {
-        width: 80%;
-        margin: 20px 0;
+        width: 100%;
+        max-width: 90%;
     }
 
+    .section-title, .section-description {
+        font-size: 1.5rem;
+    }
+
+    /* Gallery Section */
     .gallery-images {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .gallery-image {
         width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
     }
 
-    .contact-info {
+    /* FAQ Section */
+    .faq-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .faq-item p {
         font-size: 1rem;
+    }
+
+    /* Testimonials Section */
+    .testimonial-item p {
+        font-size: 1rem;
+    }
+
+    .testimonial-author {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    /* Enquiry Form */
+    .form-container label, .form-container input, .form-container select, .form-container textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Larger Screens (tablets and up) */
+@media (min-width: 769px) {
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-us-image {
+        width: 50%;
+    }
+
+    .about-us-content {
+        width: 50%;
+    }
+
+    .packages {
+        flex-direction: row;
+    }
+
+    .gallery-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 }
 
@@ -367,3 +449,5 @@ input:focus, select:focus, textarea:focus {
 .submit-button:hover {
     background-color: #3a96c8;
 }
+
+
