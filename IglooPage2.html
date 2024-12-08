@@ -103,7 +103,11 @@
             We can customise our packages to suit any occasion. Please note that prices vary depending on location, package, and hire duration. 
             We aim to respond within 24 hours. To secure a booking, a £100 refundable deposit is required. Bookings cannot be secured without this deposit.
         </p>
-        <form action="/submit-enquiry" method="POST" class="form-container">
+        <form action="https://api.web3forms.com/submity" method="POST" class="form-container">
+
+            <input type="hidden" name="access_key" value="20b3524c-1573-41b4-a94c-5780a6c82630">
+
+
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" placeholder="Full Name" required>
     
@@ -136,6 +140,7 @@
     
             <label for="comments">Other Comments/Special Requests:</label>
             <textarea id="comments" name="comments" rows="4" placeholder="Let us know any specific details or requests"></textarea>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
     
             <button type="submit" class="submit-button">Submit Enquiry</button>
         </form>
