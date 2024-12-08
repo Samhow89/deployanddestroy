@@ -1,0 +1,93 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #141f31;
+    color: white;
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Thank You Section */
+.thank-you {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #1c2b43;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.thank-you-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #141f31;
+    padding: 10px;
+}
+
+.thank-you-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.thank-you-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.email-link {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    background-color: #00bcd4;
+    color: #141f31;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0097a7;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .thank-you {
+        padding: 15px;
+    }
+
+    .thank-you-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .thank-you-content p {
+        font-size: 0.9rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

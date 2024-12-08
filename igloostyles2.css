@@ -184,7 +184,7 @@ body {
 
 .testimonial-author {
     font-size: 1.1rem;
-    color: #f1c40f;
+    color: #00bcd4;
     font-weight: 600;
 }
 
@@ -201,7 +201,7 @@ body {
 }
 
 .contact-link {
-    color: #f1c40f;
+    color: #00bcd4;
     text-decoration: none;
 }
 
@@ -210,7 +210,7 @@ body {
 }
 
 .social-link {
-    color: #f1c40f;
+    color: #00bcd4;
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s ease;
