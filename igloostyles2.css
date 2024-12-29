@@ -26,6 +26,11 @@ body {
     text-align: center;
     background-color: #1c2b43;
     margin-top: 0px;
+   
+    background-size:cover;
+    background-position: center;
+    background-image: linear-gradient(transparent, #1c2b43 75%), url("https://scontent.flba1-1.fna.fbcdn.net/v/t39.30808-6/468971838_921385510005339_6733153215082949998_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1RxOnjZXN5YQ7kNvgE6Hzq6&_nc_zt=23&_nc_ht=scontent.flba1-1.fna&_nc_gid=AinMMHVMovwlTQXvL3HvmMB&oh=00_AYAXRqg4XF_lXLjqb4vTGuv5tG-w5ZdrwMbZrILEBVPz4A&oe=675FCC78");
+    
 }
 
 
@@ -136,6 +141,13 @@ body {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    
+}
+
+.gallery-image:hover {
+ transform: scale(1.1);
+ transition: 0.3s ease;
     
 }
 

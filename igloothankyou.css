@@ -30,12 +30,12 @@ body {
 }
 
 .thank-you-logo {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin-bottom: 20px;
     border-radius: 50%;
     background-color: #141f31;
-    padding: 10px;
+    padding: 1px;
 }
 
 .thank-you-content h1 {
