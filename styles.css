@@ -61,3 +61,23 @@ main {
     transform: translate(-50%, -50%);
     
 }
+
+
+#logo3 {
+    mix-blend-mode: multiply;
+    height: 35dvh;
+    box-shadow: none;
+    animation: pulse 5s infinite;
+    transition: transform 0.2s ease-out;
+    margin: 3vw;
+    transition: 0.5s;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:         drop-shadow(5px 5px 5px #222); 
+    
+}
+
+#logo3:hover{
+ 
+    -webkit-filter: drop-shadow(35px 35px 35px rgba(255, 255, 255, 0.397));
+    filter:         drop-shadow(35px 35px 35px rgba(255, 255, 255, 0.397)); 
+}
