@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Page Title */
+#page-title {
+    font-size: 2.5rem;
+    color: #d9534f;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Recipe Container */
+#recipes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Recipe Cards */
+.recipe {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.recipe-title {
+    font-size: 2rem;
+    color: #5e72e4;
+    border-bottom: 2px solid #5e72e4;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Ingredient & Instruction Lists */
+.ingredient-list, .instruction-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ingredient, .instruction {
+    background: #f1f3f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.ingredient {
+    font-weight: bold;
+    color: #2d3436;
+}
+
+.instruction {
+    counter-increment: step-counter;
+    position: relative;
+    padding-left: 35px;
+}
+
+.instruction::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #5e72e4;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe {
+        width: 95%;
+    }
+
+    #page-title {
+        font-size: 2rem;
+    }
+
+    .recipe-title {
+        font-size: 1.8rem;
+    }
+}
